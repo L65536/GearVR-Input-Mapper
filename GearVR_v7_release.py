@@ -27,7 +27,8 @@ EDGE=50 # touch pad user defined effective region
 lastX=0 # tracking coordinates for mouse mode
 lastY=0 # tracking coordinates for mouse mode
 detected_titles=[] # active window title lists
-TITLE='Notepad' # foreground window title for partial matching
+TITLE1='Notepad' # foreground window title for partial matching
+TITLE2='xxx' # foreground window title for partial matching
 
 async def cantusenotify(client, INFO_UUID):
     while True:
@@ -73,7 +74,7 @@ async def cantusenotify(client, INFO_UUID):
         """
 
         # Per title key mapping # copy and modify this section for each app/game/title
-        if TITLE in window_title:
+        if TITLE1 in window_title:
         
             # Touchpad edge+centre mapped to 4+1 buttons
             if axisX==0 and axisY==0: touched=0 # reset touch
