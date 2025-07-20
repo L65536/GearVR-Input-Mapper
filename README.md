@@ -3,8 +3,8 @@ This project is about custom mapping of a Samsung GearVR controller into simulat
 The Python codes are presented in less than 200 lines and contains examples of input mappings. 
 - Text interface with debug info display.
 - Mapping of touchpad into 4+1 keys.
-- Mapping of all other keys
-- Multiple target window support with title matching 
+- Mapping of all other keys.
+- Profile switch support with window title matching.
 - No gyro or accelerometer implemented here.
 
 # Trouble shooting
